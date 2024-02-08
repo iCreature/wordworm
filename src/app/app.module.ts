@@ -4,10 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RetrieveFromDbComponent } from './retrieve-from-db/retrieve-from-db.component';
-import { WordTypeComponent } from './retrieveFromDb/word-type/word-type.component';
+import { WordTypeComponent } from './retrieve-from-db/word-type/word-type.component';
 import { AddToDbComponent } from './add-to-db/add-to-db.component';
-import { SentenceComponent } from './addToDb/sentence/sentence.component';
-import { SentencesComponent } from './retrieveFromDb/sentences/sentences.component';
+import { SentenceComponent } from './add-to-db/sentence/sentence.component';
+import { SentencesComponent } from './retrieve-from-db/sentences/sentences.component';
 
 @NgModule({
   declarations: [
