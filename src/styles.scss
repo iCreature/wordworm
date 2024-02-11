@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    padding: 10px;
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+
+  .custom-padding {
+    padding: 15px; /* Adjust the padding as needed */
+  }
+  .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+  }
+  
