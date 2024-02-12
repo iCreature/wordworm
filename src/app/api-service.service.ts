@@ -5,13 +5,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiServiceService {
-  readonly APIUrl = "http:127.0.0.1:8000"
+  readonly APIUrl = " https://eps0xry1i0.execute-api.eu-west-1.amazonaws.com/default/wordworm-lambda"
 
   constructor(private http: HttpClient) { }
 
   //get sentences 
   getSentences() : Observable<any[]> {
-    return this.http.get<any>(this.APIUrl+'/sentences/')
+    return this.http.get<any>(this.APIUrl+'/sentences')
   }
   
   /**
@@ -19,44 +19,39 @@ export class ApiServiceService {
    */
 
   getVerbs() : Observable<any[]> {
-    return this.http.get<any>(this.APIUrl+'/verbs/')
+    return this.http.get<any>(this.APIUrl+'/verbs')
   }
 
   getNouns() : Observable<any[]> {
-    return this.http.get<any>(this.APIUrl+'/nouns/')
+    return this.http.get<any>(this.APIUrl+'/nouns')
   }
 
   getPrepositions() : Observable<any[]> {
-    return this.http.get<any>(this.APIUrl+'/prepositions/')
+    return this.http.get<any>(this.APIUrl+'/prepositions')
   }
 
   getAdjectives() : Observable<any[]> {
-    return this.http.get<any>(this.APIUrl+'/adjectives/')
+    return this.http.get<any>(this.APIUrl+'/adjectives')
   }
 
   getConjunctions() : Observable<any[]> {
-    return this.http.get<any>(this.APIUrl+'/conjunctions/')
+    return this.http.get<any>(this.APIUrl+'/conjunctions')
   }
 
   getDeterminer() : Observable<any[]> {
-    return this.http.get<any>(this.APIUrl+'/determiner/')
+    return this.http.get<any>(this.APIUrl+'/determiner')
   }
 
   getExclamation() : Observable<any[]> {
-    return this.http.get<any>(this.APIUrl+'/exclamation/')
+    return this.http.get<any>(this.APIUrl+'/exclamation')
   }
 
   getAdVerbs() : Observable<any[]> {
-    return this.http.get<any>(this.APIUrl+'/adverbs/')
+    return this.http.get<any>(this.APIUrl+'/adverbs')
   }
 
   addSentence(val:any) {
-    return this.http.post(this.APIUrl + '/sentence/', val)
+    return this.http.post(this.APIUrl + '/sentence', val)
   }
-
-
-
-
-
   
 }

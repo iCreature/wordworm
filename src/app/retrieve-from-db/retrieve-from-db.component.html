@@ -1,1 +1,107 @@
-<p>retrieve-from-db works!</p>
+<div class="container">
+    <div class="row">
+     <div class ="col-md-6">
+      <div class="center-container">
+       <div class="input-group custom-padding">
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">WordTypes</button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="0" href="#">Nouns<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Word one</a></li>
+                  <li><a tabindex="-1" href="#">Word two</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Pronouns<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Word one</a></li>
+                  <li><a tabindex="-1" href="#">Word two</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Adverb<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Word one</a></li>
+                  <li><a tabindex="-1" href="#">Word two</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Verbs<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Word one</a></li>
+                  <li><a tabindex="-1" href="#">Word two</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Conjunctions<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Word one</a></li>
+                  <li><a tabindex="-1" href="#">Word two</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Prepositions<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Word one</a></li>
+                  <li><a tabindex="-1" href="#">Word two</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Adjectives<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Word one</a></li>
+                  <li><a tabindex="-1" href="#">Word two</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Prepositions<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Word one</a></li>
+                  <li><a tabindex="-1" href="#">Word two</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Deteriminers<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Word one</a></li>
+                  <li><a tabindex="-1" href="#">Word two</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Exclamation<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Word one</a></li>
+                  <li><a tabindex="-1" href="#">Word two</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <br>
+          <input type="text" class="form-control" placeholder="Sentence.." readonly>
+          <br><br><br>
+          <div class="input-group-append">
+            <button class="btn btn-danger" type="button">Add</button>
+          </div>
+         </div>
+        </div>
+        </div>
+      </div>
+     </div>
+  <br><br>
+  <!-- table-->
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Sentence</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let dataItem of SentencesList">
+        <th scope="row">#</th>
+        <td>{{dataItem.word}}</td>
+      </tr>
+    </tbody>
+  </table>
